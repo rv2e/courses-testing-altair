@@ -18,29 +18,35 @@ Click Submit Answer
 *** =sample_code
 ```{python}
 from altair import Chart, load_dataset;
+from pythonbackend.shell_utils import display; # you can hide this in PEC
 
 # load built-in dataset as a pandas DataFrame
 cars = load_dataset('cars')
 
-Chart(cars).mark_circle().encode(
+chart = Chart(cars).mark_circle().encode(
     x='Horsepower',
     y='Miles_per_Gallon',
     color='Origin',
 )
+
+display(chart)
 ```
 
 *** =solution
 ```{python}
 from altair import Chart, load_dataset;
+from pythonbackend.shell_utils import display; # you can hide this in PEC
 
 # load built-in dataset as a pandas DataFrame
 cars = load_dataset('cars')
 
-Chart(cars).mark_circle().encode(
+chart = Chart(cars).mark_circle().encode(
     x='Horsepower',
     y='Miles_per_Gallon',
     color='Origin',
 )
+
+display(chart)
 ```
 
 
