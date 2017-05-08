@@ -17,35 +17,38 @@ Click Submit Answer
 
 *** =sample_code
 ```{python}
-from altair import Chart, load_dataset;
-from pythonbackend.shell_utils import display; # you can hide this in PEC
+# you can hide the following import in the pre exercise code
+from pythonbackend.shell_utils import display
 
-# load built-in dataset as a pandas DataFrame
+from altair import Chart, load_dataset
+
 cars = load_dataset('cars')
-
 chart = Chart(cars).mark_circle().encode(
     x='Horsepower',
     y='Miles_per_Gallon',
     color='Origin',
 )
 
+# display on DataCamp!
 display(chart)
 ```
 
 *** =solution
 ```{python}
-from altair import Chart, load_dataset;
-from pythonbackend.shell_utils import display; # you can hide this in PEC
+# you can hide the following import in the pre exercise code
+from pythonbackend.shell_utils import display
 
-# load built-in dataset as a pandas DataFrame
+from altair import Chart, load_dataset
+
+
 cars = load_dataset('cars')
-
 chart = Chart(cars).mark_circle().encode(
     x='Horsepower',
     y='Miles_per_Gallon',
     color='Origin',
 )
 
+# display on DataCamp!
 display(chart)
 ```
 
