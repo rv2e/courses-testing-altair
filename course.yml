@@ -1,7 +1,4 @@
-title                : Testing altair
-description          : This is an automatically generated demo course which will help you on your way to create an awesome DataCamp course.
-university           : DataCamp
-difficulty_level     : 2
-time_needed          : 1 hour
+title                : Testing Altair
+description          : Course to test the functionality of the Altair visualization library on DataCamp
 programming_language : python
-from                 : "python-base-prod:20"
+from                 : "python-base-prod:v1.0.2"
