@@ -1,21 +1,30 @@
 ---
-title       : Testing Altair
-description : Testing altair
+title: 'Testing Altair'
+description: 'Testing altair'
+---
 
---- type:NormalExercise xp:50 key:416a755a92
 ## Testing Altair
+
+```yaml
+type: NormalExercise
+key: 416a755a92
+xp: 100
+```
 
 This exercise tests altair
 
-*** =instructions
+`@instructions`
 Click Submit Answer
 
-*** =pre_exercise_code
+`@hint`
+
+
+`@pre_exercise_code`
 ```{python}
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{python}
 # you can hide the following import in the pre exercise code
 from pythonbackend.shell_utils import display
@@ -33,7 +42,7 @@ chart = Chart(cars).mark_circle().encode(
 display(chart)
 ```
 
-*** =solution
+`@solution`
 ```{python}
 # you can hide the following import in the pre exercise code
 from pythonbackend.shell_utils import display
@@ -52,8 +61,7 @@ chart = Chart(cars).mark_circle().encode(
 display(chart)
 ```
 
-
-*** =sct
+`@sct`
 ```{python}
 success_msg('amazing')
 ```
