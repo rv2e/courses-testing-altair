@@ -26,8 +26,10 @@ Click Submit Answer
 
 `@sample_code`
 ```{python}
-# you can hide the following import in the pre exercise code
+# Load the display function for Altair to work in DataCamp
 from pythonbackend.shell_utils import display
+
+import altair as alt
 
 from altair import Chart, load_dataset
 
@@ -44,11 +46,12 @@ display(chart)
 
 `@solution`
 ```{python}
-# you can hide the following import in the pre exercise code
+# Load the display function for Altair to work in DataCamp
 from pythonbackend.shell_utils import display
 
-from altair import Chart, load_dataset
+import altair as alt
 
+from altair import Chart, load_dataset
 
 cars = load_dataset('cars')
 chart = Chart(cars).mark_circle().encode(
