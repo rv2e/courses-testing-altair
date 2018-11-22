@@ -10,4 +10,4 @@ pip3 install Jinja2==2.10 --target $SHARED_PYTHON_PATH --upgrade
 pip3 install git+https://github.com/datacamp/pythonwhat@$PYTHONWHAT_VERSION --upgrade --no-dependencies
 pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/pythonbackend.git/@$PYTHONBACKEND_VERSION --upgrade --no-dependencies
 
-pip3 install git+git://github.com/altair-viz/altair
+pip3 install git+git://github.com/altair-viz/altair@v2.2.2
